@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/rblogo.png" type="">
 
-  <title> Royal Bites </title>
+  <title>Royal Bites</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -32,13 +32,16 @@
 
 </head>
 
-<body class="sub_page">
+<body>
 
   <div class="hero_area">
-   
+    <div class="bg-box">
+     
+    </div>
     <!-- header section strats -->
-    <header class="header_section">
+    <header class="header_section";>
       <div class="container">
+        
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="home.html">
             <span>
@@ -52,8 +55,8 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
-              <li class="nav-item">
-                <a class="nav-link" href="home.html">Home </a>
+              <li class="nav-item active">
+                <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="menu.html">Menu</a>
@@ -61,8 +64,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="book.html">Book Table <span class="sr-only">(current)</span> </a>
+              <li class="nav-item">
+                <a class="nav-link" href="book.html">Book Table</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="orderhear.html">Order Here</a>
@@ -71,80 +74,44 @@
                 <a class="nav-link" href="orderonline.html">Order Online</a>
               </li>
             </ul>
-            
           </div>
         </nav>
       </div>
     </header>
-    <!-- end header section -->
-  </div>
 
-  <!-- book section -->
-  <section class="book_section layout_padding">
+<!-- orderonline section -->
+
+<section class="online_section layout_padding" >
     <div class="container">
       <div class="heading_container">
         <h2>
-          Book A Table
+         Order Online 
         </h2>
       </div>
       <div class="row">
         <div class="col-md-6">
           <div class="form_container">
-          <form action="home.php" method="post">
-            <input class="form-control nice-select wide" type="text" placeholder="First Name" name="fname" id="fname" pattern="[A-Za-z]{1,32}" required ><br>
-            <input class="form-control nice-select wide" type="text" placeholder="Last Name" name="lname" id="lname" pattern="[A-Za-z]{1,32}" required><br>
-            <input class="form-control nice-select wide" type="text" maxlength="10" placeholder="Number" name="number" id="number" pattern="[0-9]{10}" required><br>
-            <input class="form-control nice-select wide" type="email" placeholder="Email" name="email" required><br>
-             <select 
-              class="form-control nice-select wide" name="person" id="person">>
-              <option name="person" disabled selected>
-                How many persons?
-              </option>
-              <option value="1">
-                1
-              </option>
-              <option value="2">
-                2
-              </option>
-              <option value="3">
-                3
-              </option>
-              <option value="4">
-                4
-              </option>
-            </select><br>
-            <select class="form-control nice-select wide" name="sections" id="sections">
-              <option name="sections" disabled selected >
-                Select The Below Sections 
-              </option>
-              <option name="sections">
-                Family
-              </option>
-              <option name="sections">
-                Private
-              </option>
-              <option name="sections">
-                Public
-              </option>
-            </select><br>
-            <!-- <input class="form-control nice-select wide" type="text" maxlength="4" placeholder="Enter 4 Digit Table Number" name="tabnumber"id="tabnumber" pattern="[0-9]{4}" required><br> -->
-            <input class="form-control nice-select wide" type="date" placeholder="Date" name="date"required><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" placeholder="BOOK NOW" name="sb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" placeholder="BOOK NOW" name="sb"><br>
-        </form>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="map_container ">
-            <div id="googleMap">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30568.10899937781!2d75.04045635626468!3d16.726171979733863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc729f61aebbfb3%3A0xd10a23aaae80ef67!2sAthani%2C%20Karnataka%20591304!5e0!3m2!1sen!2sin!4v1692839355649!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            <center>
+            <form action="orderonline.php" method="post">
+              <input class="form-control nice-select wide" type="text" placeholder="First Name" name="fname"id="fname" pattern="[A-Za-z]{1,32}" required><br>
+              <input class="form-control nice-select wide" type="text" placeholder="Last Name" name="lname" id="lname" pattern="[A-Za-z]{1,32}" required><br>              
+                <input class="form-control nice-select wide" type="text" maxlength="10" placeholder="Number" name="number" id = "number" pattern="[0-9]{10}"><br>
+                <input class="form-control nice-select wide" type="email" placeholder="Email" name="email" required><br>
+                <input class="form-control nice-select wide" type="text" placeholder="Enter Item Name" name="itmname" id="itmname" pattern="[A-Za-z]{1,15}" required><br>
+                <input class="form-control nice-select wide" type="text" placeholder="Enter Item  Quantity" name="itmquantity" id = "itmquantity" pattern="[0-9]{1,9}" required><br>
+                <input class="form-control nice-select wide" type="text" placeholder="Address" name="address" id="address" pattern="[A-Za-z]{1,50}" required><br>
+                <input class="form-control nice-select wide" type="text" placeholder="City" name="city" id="city" pattern="[A-Za-z]{1,20}"  required><br>
+                <input class="form-control nice-select wide" type="text" placeholder="City Pincode"  name="citypin" id="citypin" pattern="[0-9]{6}"><br>
+                <input class="a"type="submit" name="sb"><br>
+            </form>
+          </center>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- end book section -->
+    </section>
+
+
 
   <!-- footer section -->
   <footer class="footer_section">
@@ -156,7 +123,7 @@
               Contact Us
             </h4>
             <div class="contact_link_box">
-              <a href="">
+              <a href="https://goo.gl/maps/YJiMGSUayV9c711W7">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
                   Athani Karnataka
@@ -241,7 +208,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
   <!-- custom js -->
   <script src="js/custom.js"></script>
- 
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
 </body>
 
 </html>

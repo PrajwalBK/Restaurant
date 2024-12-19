@@ -1,17 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
 body {
   font-family: "Open Sans", sans-serif;
-  color: #0c0c0c;
+  color: #111111;
   background-color: #ffffff;
-  overflow-x: hidden;
+  
 }
 
 .layout_padding {
   padding: 90px 0;
+  color: #141414;
 }
 
 .layout_padding2 {
   padding: 75px 0;
+  
 }
 
 .layout_padding2-top {
@@ -27,7 +29,7 @@ body {
 }
 
 .layout_padding-bottom {
-  padding-bottom: 90px;
+  padding-bottom: 10px;
 }
 
 h1,
@@ -36,8 +38,7 @@ h2 {
 }
 
 .heading_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -46,6 +47,7 @@ h2 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+         
 }
 
 .heading_container h2 {
@@ -56,30 +58,30 @@ h2 {
 }
 
 .heading_container h2 span {
-  color: #ffbe33;
+  color: #070606;
 }
 
 .heading_container p {
   margin-top: 10px;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .heading_container.heading_center {
-  -webkit-box-align: center;
+  -webkit-box-align:unset;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+  text-align:unset;
 }
 
 a,
 a:hover,
 a:focus {
-  text-decoration: none;
+  text-decoration:none;
 }
 
 a:hover,
 a:focus {
-  color: initial;
+  color:#0a0909;
 }
 
 .btn,
@@ -91,60 +93,39 @@ a:focus {
 
 /*header section*/
 .hero_area {
-  position: relative;
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  background-color:#F1F2F3;        
 }
 
 .bg-box {
+ 
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 100px;
+  left: px;
   width: 100%;
   height: 100%;
 }
 
-.bg-box img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
+
 
 .sub_page .hero_area {
-  min-height: auto;
+  min-height;
 }
 
 .sub_page .hero_area .bg-box {
-  position: absolute;
-  top: 0;
-  left: 0;
+  top : 100px;
   width: 100%;
   height: 100%;
 }
 
-.sub_page .hero_area .bg-box img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: right top;
-     object-position: right top;
-}
+
 
 .header_section {
-  padding: 15px 0;
+  padding:35px 0;
 }
 
 .header_section .container-fluid {
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 100px;
+  padding-left: 45px;
 }
 
 .navbar-brand {
@@ -153,43 +134,37 @@ a:focus {
 
 .navbar-brand span {
   font-weight: bold;
-  font-size: 32px;
-  color: #ffffff;
+  font-size: 48px;
+  color:#FF7F50;
 }
 
 .custom_nav-container {
-  padding: 0;
+  padding: 1px;
 }
 
 .custom_nav-container .navbar-nav {
-  padding-left: 18%;
+  padding-left: 35%;
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
-  padding: 5px 20px;
-  color: #ffffff;
+  padding: 2px 10px;
+  color: #FF7F50;
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  
 }
 
-.custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #ffbe33;
-}
 
 .custom_nav-container .nav_search-btn {
-  width: auto;
-  height: auto;
-  padding: 0;
-  border: none;
-  color: #ffffff;
-  margin: 0 10px;
+ color: #000000;
 }
 
 .custom_nav-container .nav_search-btn:hover {
-  color: #ffbe33;
+  color: #FF7F50;
+
 }
 
 .user_option {
@@ -206,40 +181,43 @@ a:focus {
 }
 
 .user_option .user_link {
-  color: #ffffff;
+  color: #0c0b0b;
 }
 
 .user_option .user_link:hover {
-  color: #ffbe33;
+
+  color: #FF7F50;
 }
 
 .user_option .cart_link {
-  display: -webkit-box;
+ 
   display: -ms-flexbox;
-  display: flex;
+
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          
 }
 
 .user_option .cart_link svg {
   width: 17px;
   height: auto;
-  fill: #ffffff;
+  fill:#070606;
   margin-bottom: 2px;
 }
 
 .user_option .cart_link:hover svg {
-  fill: #ffbe33;
+  width:19px;
+  fill:#FF7F50;
 }
 
 .user_option .order_online {
   display: inline-block;
   padding: 8px 30px;
-  background-color: #ffbe33;
+  background-color: #080807;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
@@ -248,7 +226,8 @@ a:focus {
 }
 
 .user_option .order_online:hover {
-  background-color: #e69c00;
+
+  background-color:  #FF7F50;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -267,7 +246,7 @@ a:focus {
   display: block;
   width: 35px;
   height: 4px;
-  background-color: #ffffff;
+  background-color: #F5F5F5;
   margin: 7px 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -282,7 +261,7 @@ a:focus {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #ffffff;
+
   top: -10px;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
@@ -312,51 +291,43 @@ a:focus {
 /*end header section*/
 /* slider section */
 .slider_section {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
+  
+  background-color: #6c6e70;
   padding: 45px 0 75px 0;
+  
 }
 
 .slider_section .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+ 
 }
 
 .slider_section #customCarousel1 {
-  width: 100%;
-  position: unset;
+ 
 }
 
 .slider_section .detail-box {
-  color: #ffffff;
-  margin-bottom: 145px;
+ 
+  color: #ffff;
+  margin-bottom: 150px;
+  margin-left: 50px;
 }
 
 .slider_section .detail-box h1 {
   font-size: 3.5rem;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .slider_section .detail-box p {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .slider_section .detail-box a {
   display: inline-block;
-  padding: 10px 45px;
-  background-color: #ffbe33;
+  padding: 10px 20px;
+  background-color: #FF7F50;
   color: #ffffff;
-  border-radius: 45px;
+  border-radius: 50px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: none;
@@ -364,7 +335,8 @@ a:focus {
 }
 
 .slider_section .detail-box a:hover {
-  background-color: #e69c00;
+
+  background-image:ur('../../../fast food restaurant/images/about-img.png') ;
 }
 
 .slider_section .img-box img {
@@ -372,6 +344,7 @@ a:focus {
 }
 
 .slider_section .carousel-indicators {
+
   position: unset;
   margin: 0;
   -webkit-box-pack: start;
@@ -383,22 +356,24 @@ a:focus {
 }
 
 .slider_section .carousel-indicators li {
-  background-color: #ffffff;
+  
+  
   width: 12px;
   height: 12px;
   border-radius: 100%;
-  opacity: 1;
+  opacity:1;
 }
 
 .slider_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #ffbe33;
+  background-color:#FF7F50;
 }
 
 .offer_section {
   position: relative;
   padding-top: 45px;
+ 
 }
 
 .offer_section .box {
@@ -424,7 +399,7 @@ a:focus {
   -webkit-transition: all 0.1 0.5s;
   transition: all 0.1 0.5s;
   border-radius: 100%;
-  border: 5px solid #ffbe33;
+  border: 5px solid #FF7F50;
   overflow: hidden;
 }
 
@@ -453,7 +428,7 @@ a:focus {
 .offer_section .box .detail-box a {
   display: inline-block;
   padding: 10px 30px;
-  background-color: #ffbe33;
+  background-color: #FF7F50;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
@@ -462,7 +437,7 @@ a:focus {
 }
 
 .offer_section .box .detail-box a:hover {
-  background-color: #e69c00;
+  background-color: #FF7F50;
 }
 
 .offer_section .box .detail-box a svg {
@@ -498,7 +473,7 @@ a:focus {
 }
 
 .food_section .filters_menu li.active {
-  background-color: #222831;
+  background-color: #FF7F50;
   color: #ffffff;
 }
 
@@ -566,7 +541,7 @@ a:focus {
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  background: #ffbe33;
+  background: #FF7F50;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,7 +577,7 @@ a:focus {
 .food_section .btn-box a {
   display: inline-block;
   padding: 10px 55px;
-  background-color: #ffbe33;
+  background-color: #FF7F50;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
@@ -611,7 +586,7 @@ a:focus {
 }
 
 .food_section .btn-box a:hover {
-  background-color: #e69c00;
+  
 }
 
 .about_section {
@@ -649,7 +624,7 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #ffbe33;
+  background-color: #FF7F50;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
@@ -659,7 +634,7 @@ a:focus {
 }
 
 .about_section .detail-box a:hover {
-  background-color: #e69c00;
+  
 }
 
 .book_section {
@@ -674,7 +649,7 @@ a:focus {
   width: 100%;
   border: none;
   height: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   padding-left: 25px;
   border: 1px solid #999;
   outline: none;
@@ -711,7 +686,7 @@ a:focus {
   text-transform: uppercase;
   display: inline-block;
   padding: 10px 55px;
-  background-color: #ffbe33;
+  background-color: #FF7F50;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
@@ -720,12 +695,12 @@ a:focus {
 }
 
 .book_section .form_container button:hover {
-  background-color: #e69c00;
+ 
 }
 
 .book_section .map_container {
   width: 100%;
-  height: 345px;
+  height: 470px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -735,6 +710,63 @@ a:focus {
   min-height: 100%;
   width: 100%;
 }
+
+/* online order section start */
+.online_section {
+  position: relative;
+}
+.online_section .heading_container {
+  margin-bottom: 25px;
+  margin-left: 40%;
+}
+.online_section .form_container .form-control {
+  margin-left:300px;
+  width: 100%;
+  border: none;
+  height: 50px;
+  margin-bottom: 25px;
+  padding-left: 25px;
+  border: 1px solid #999;
+  outline: none;
+  color: #000000;
+  border-radius: 5px;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.online_section .form_container .a{
+  margin-left: 95%;
+}
+/* online order section ends */
+
+/* hear order section start */
+.online_section {
+  position: relative;
+}
+.hear_section .heading_container {
+  margin-bottom: 25px;
+  margin-left: 40%;
+}
+.hear_section .form_container .form-control {
+  margin-left:300px;
+  width: 100%;
+  border: none;
+  height: 50px;
+  margin-bottom: 25px;
+  padding-left: 25px;
+  border: 1px solid #999;
+  outline: none;
+  color: #000000;
+  border-radius: 5px;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.hear_section .form_container .a{
+  margin-left: 95%;
+}
+/* online order section ends */
+
 
 /* client section start */
 .client_section .heading_container {
@@ -770,7 +802,7 @@ a:focus {
 
 .client_section .box .img-box img {
   border-radius: 100%;
-  border: 5px solid #ffbe33;
+  border: 5px solid #FF7F50;
   position: relative;
 }
 
@@ -781,7 +813,7 @@ a:focus {
   top: 0;
   width: 20px;
   height: 20px;
-  background-color: #ffbe33;
+  background-color: #FF7F50;
   -webkit-transform: rotate(45deg) translateX(-50%);
           transform: rotate(45deg) translateX(-50%);
 }
@@ -820,7 +852,7 @@ a:focus {
 .client_section .owl-carousel .owl-nav .owl-next {
   width: 45px;
   height: 45px;
-  background-color: #ffbe33;
+  background-color:#FF7F50;
   color: #ffffff;
   outline: none;
   bottom: 0px;
@@ -886,7 +918,7 @@ a:focus {
   text-transform: uppercase;
   display: inline-block;
   padding: 10px 55px;
-  background-color: #ffbe33;
+  background-color: #FF7F50;
   color: #ffffff;
   border-radius: 0px;
   -webkit-transition: all 0.3s;
@@ -895,7 +927,7 @@ a:focus {
 }
 
 .contact_section .form_container button:hover {
-  background-color: #e69c00;
+  background-color: #FF7F50;
 }
 
 /* footer section*/
@@ -945,7 +977,7 @@ a:focus {
 }
 
 .footer_section .footer_contact .contact_link_box a:hover {
-  color: #ffbe33;
+  color:#FF7F50;
 }
 
 .footer_section .footer-logo {
@@ -988,7 +1020,7 @@ a:focus {
 }
 
 .footer_section .footer_social a:hover {
-  color: #ffbe33;
+  color: #FF7F50;
 }
 
 .footer_section .footer-info {
@@ -1005,3 +1037,7 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+.slider_section.container
+{
+  background-image:ur('../../../fast food restaurant/images/about-img.png');
+}
