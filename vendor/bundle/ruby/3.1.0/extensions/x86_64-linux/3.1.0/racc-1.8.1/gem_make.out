@@ -1,0 +1,15 @@
+current directory: /home/runner/work/Restaurant/Restaurant/vendor/bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+/opt/hostedtoolcache/Ruby/3.1.6/x64/bin/ruby -I /opt/hostedtoolcache/Ruby/3.1.6/x64/lib/ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /home/runner/work/Restaurant/Restaurant/vendor/bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250124-1867-18umtj sitelibdir\=./.gem.20250124-1867-18umtj clean
+
+current directory: /home/runner/work/Restaurant/Restaurant/vendor/bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250124-1867-18umtj sitelibdir\=./.gem.20250124-1867-18umtj
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/runner/work/Restaurant/Restaurant/vendor/bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250124-1867-18umtj sitelibdir\=./.gem.20250124-1867-18umtj install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20250124-1867-18umtj/racc
