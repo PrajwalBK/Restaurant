@@ -31,7 +31,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ RESTAURANT_TOKEN}}  # Ensure this is correct
+          github_token: ${{ secrets.RESTAURANT_TOKEN}}  # Ensure this is correct
           publish_dir: ./_site
           target_branch: gh-pages  # Target branch for deployment
 
