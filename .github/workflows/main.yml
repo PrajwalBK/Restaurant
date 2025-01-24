@@ -20,13 +20,16 @@ jobs:
           bundler-cache: true
 
       - name: Install dependencies
-        run: bundle install --verbose  # Verbose to get more information
+        run: bundle install --verbose
 
       - name: Build site
         run: bundle exec jekyll build --source ./ --destination ./_site --verbose
 
+      - name: Clear GitHub Actions cache (if needed)
+        run: git config --global --add safe.directory /github/workspace
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Make sure this is configured correctly
           publish_dir: ./_site
