@@ -3,7 +3,7 @@ name: Build and Deploy Jekyll Site
 on:
   push:
     branches:
-      - main
+      - main  # This will trigger the action when pushing to the main branch
 
 jobs:
   build-deploy:
@@ -20,16 +20,18 @@ jobs:
           bundler-cache: true
 
       - name: Install dependencies
-        run: bundle install --verbose
+        run: bundle install
 
       - name: Build site
-        run: bundle exec jekyll build --source ./ --destination ./_site --verbose
+        run: bundle exec jekyll build --source ./ --destination ./_site
 
-      - name: Clear GitHub Actions cache (if needed)
+      - name: Clear GitHub Actions cache (optional)
         run: git config --global --add safe.directory /github/workspace
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # Make sure this is configured correctly
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Ensure the token has the right permissions
           publish_dir: ./_site
+          # Change the target branch to `main` instead of `gh-pages`
+          target_branch: main  # This will push to the main branch instead of gh-pages
