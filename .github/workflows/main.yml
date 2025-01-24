@@ -3,7 +3,7 @@ name: Build and Deploy Jekyll Site
 on:
   push:
     branches:
-      - main  # This will trigger the action when pushing to the main branch
+      - main  # Trigger on push to the main branch
 
 jobs:
   build-deploy:
@@ -31,14 +31,14 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.RESTAURANT_TOKEN }}  # Use your PAT secret here (GH_TOKEN) or use GITHUB_TOKEN
+          github_token: ${{ RESTAURANT_TOKEN}}  # Ensure this is correct
           publish_dir: ./_site
-          target_branch: main
+          target_branch: gh-pages  # Target branch for deployment
 
       - name: Commit and push changes (optional)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "Deploy built site to main branch"
-          git push origin main
+          git commit -m "Deploy built site to gh-pages"
+          git push origin gh-pages
