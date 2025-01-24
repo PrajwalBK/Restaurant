@@ -31,14 +31,14 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.RESTAURANT_TOKEN}}  # Ensure this is correct
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Use default token provided by GitHub
           publish_dir: ./_site
-          target_branch: gh-pages  # Target branch for deployment
+          target_branch: main  # Changed to main branch for deployment
 
       - name: Commit and push changes (optional)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "Deploy built site to gh-pages"
-          git push origin gh-pages
+          git commit -m "Deploy built site to main branch"
+          git push origin main  # Changed to main branch for pushing changes
