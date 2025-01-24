@@ -20,10 +20,10 @@ jobs:
           bundler-cache: true
 
       - name: Install dependencies
-        run: bundle install
+        run: bundle install --verbose  # Verbose to get more information
 
       - name: Build site
-        run: bundle exec jekyll build --source ./docs --destination ./_site
+        run: bundle exec jekyll build --source ./ --destination ./_site --verbose
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
