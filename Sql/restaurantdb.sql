@@ -67,7 +67,10 @@ CREATE TABLE `login_register` (
   `ID` int(11) NOT NULL,
   `USERNAME` varchar(200) NOT NULL,
   `EMAIL` varchar(50) NOT NULL,
+<<<<<<< HEAD
   `NUMBER` varchar(10) NOT NULL
+=======
+>>>>>>> 74ddd965598834fd6d4ca9af2c2608b5be24c174
   `PASSWORD` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -75,7 +78,11 @@ CREATE TABLE `login_register` (
 -- Dumping data for table `login_register`
 --
 
+<<<<<<< HEAD
 INSERT INTO `login_register` (`ID`, `USERNAME`, `EMAIL`,`NUMBER`, `PASSWORD`) VALUES
+=======
+INSERT INTO `login_register` (`ID`, `USERNAME`, `EMAIL`, `PASSWORD`) VALUES
+>>>>>>> 74ddd965598834fd6d4ca9af2c2608b5be24c174
 (1, 'Ravi', 'ravi@gmail.com', 'ravi'),
 (2, 'Raju', 'raju@gmail.com', 'raju');
 
